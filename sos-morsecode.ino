@@ -13,12 +13,12 @@
   by Scott Fitzgerald
  */
  
- */
+ /*
   This code will now result in a s.o.s. morsecode
  
   modified 16 Februari 2015
   by Daniël de Wit
- /*
+ */
 
 
 // the setup function runs once when you press reset or power the board
@@ -29,20 +29,20 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  blink(100);
-  blink(100);
-  blink(100);
-  blink(1000);
-  blink(1000);
-  blink(1000);
-  blink(100);
-  blink(100);
-  blink(100);
+  blink(100); // short blink
+  blink(100); // short blink
+  blink(100); // short blink
+  blink(1000); // long blink
+  blink(1000); // long blink
+  blink(1000); // long blink
+  blink(100); // short blink
+  blink(100); // short blink
+  blink(100); // short blink
 }
 
-int blink(int duration){
+int blink(int duration){    // set duration in miliseconds for long or short blink
   digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(duration);             // wait for a second
+  delay(duration);          // wait for a second
   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
-  delay(100);             // wait for a second
+  delay(100);               // wait for a second
 }
